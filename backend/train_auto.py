@@ -89,7 +89,7 @@ def build_all():
         }
     )
 
-    df = pd.concat([Diabetes, Heart, Kidney], ignore_index=True)
+    df = pd.concat([diabetes, heart, kidney], ignore_index=True)
 
     # Convert to numeric safely
     df[FEATURES] = df[FEATURES].apply(pd.to_numeric, errors="coerce")
